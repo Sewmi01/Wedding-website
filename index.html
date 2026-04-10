@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body class="bg-white font-sans">
+  <!-- Hero Section -->
+  <section class="relative h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('hero.jpg');">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+  
+    <!-- Text content -->
+    <div class="relative z-10 text-white mt-80 md:mt-0 ">
+      <h1 class="text-4xl md:text-6xl  tracking-wider"><span class="font-safira">Shani</span> <span class="font-LMR">&</span> <span class="font-safira">Pasindu</span></h1>
+      <p class="text-lg md:text-4xl mt-2 font-Satify ">Save the date</p>
+    </div>
+  
+   <!-- Romantic Scroll Indicator -->
+<!-- Romantic Scroll Indicator -->
+<div class="mt-10 flex justify-center">
+  <button id="scrollDown" class="relative w-12 h-12 flex flex-col items-center justify-center">
+    <!-- Heart with arrow inside -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-10 w-10 text-white"
+         fill="currentColor" viewBox="0 0 24 24" stroke="none">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09
+               C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+               c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+    <!-- Down arrow -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-6 w-6 text-white mt-1 animate-bounce"
+         fill="none" viewBox="0 0 24 24"
+         stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7" />
+    </svg>
+    <!-- Glowing ping -->
+    <span class="absolute w-12 h-12 rounded-full bg-white opacity-20 animate-ping"></span>
+  </button>
+</div>
+    
+    <!-- <a href="#next-section" 
+    class="mt-10 inline-flex items-center justify-center w-14 h-14 rounded-full bg-white text-black animate-pulse hover:bg-gray-200 transition">
+   ↓
+ </a> -->
+
+    <!-- Bottom convex curve -->
+    <div class="absolute bottom-0 w-full overflow-hidden leading-none">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="w-full h-32">
+        <path d="M0,0 Q250,150 500,0 L500,150 L0,150 Z" fill="white"></path>
+      </svg>
+    </div>
+  </section>
+  
+  
+  
+
+<!-- Date Section -->
+<section class="py-4 text-center relative">
+  <!-- Bottom Left Flower -->
+  <div class="absolute left-0 bottom-0 hidden md:block">
+    <img src="./images/Flower1.png" alt="flower" class="w-32 md:w-48">
+  </div>
+
+  <!-- Top Right Flower -->
+  <div class="absolute right-0 top-0 hidden md:block">
+    <img src="./images/Flower2.png" alt="flower" class="w-32 md:w-48">
+  </div>
+
+  <!-- Center Image (KM + Date as one image) -->
+  <div class="flex justify-center">
+    <img src="./images/logo.png" alt="KM Date"  class="max-h-[35rem] md:max-h-[25rem] w-auto">
+  </div>
+
+  <!-- Countdown -->
+  <div class="flex justify-center mt-10">
+    <div id="countdown" 
+    class="countdown flex gap-6 text-white rounded-xl px-6 py-3 shadow-lg bg-[#383838] 
+           w-[320px] sm:w-[420px] md:w-[520px] lg:w-[600px] font-CountDown">
+</div>
+  </div>
+</section>
+
+
+<section class="flex justify-center items-center bg-black">
+  <div class="flex justify-center">
+    <img src="./images/image15.png" 
+         alt="Couple" 
+         class="max-h-[700px] w-auto object-contain  shadow-lg">
+  </div>
+</section>
+
+
+<section class="py-24 text-center relative">
+  <!-- Bottom Left Flower -->
+  <div class="absolute left-0 bottom-0 hidden md:block">
+    <img src="./images/Flower1.png" alt="flower" class="w-32 md:w-48">
+  </div>
+
+  <!-- Top Right Flower -->
+  <div class="absolute right-0 top-0 hidden md:block">
+    <img src="./images/Flower2.png" alt="flower" class="w-32 md:w-48">
+  </div>
+
+  <!-- Invitation Text -->
+  <div class="max-w-2xl mx-auto px-4">
+    <p class="text-gray-700 mb-4 font-1">
+      With hearts entwined and dreams embraced,<br>
+      Together with their beloved families,
+    </p>
+    <p class="text-gray-700 mb-8 font-1">
+      take great pleasure in cordially inviting you to<br>
+      share in the joyous occasion
+    </p>
+
+    <h2 class="text-3xl text-gray-600 font-light mb-2 font-2">Shani</h2>
+    <p class=" text-gray-600 mb-2 font-3">weds</p>
+    <h2 class="text-3xl text-gray-600 font-light mb-8 font-2">Pasindu</h2>
+
+    <p class="text-gray-700 font-1">
+      on the <span class="font-semibold">29th of April 2026</span>
+    </p>
+  </div>
+</section>
+
+<!-- <section class="hero">
+  <picture>
+    <img src="./images/image16.png" alt="Couple" class="hero__img">
+  </picture>
+</section> -->
+
+<section class="w-full h-screen hero">
+  <!-- <img src="./images/image16.png" 
+       alt="Couple" 
+       class="w-full h-full object-cover object-left md:object-center Couple-Image16"> -->
+       <picture>
+        
+        <source media="(max-width: 700px)" style="width:100%;height:100vh;object-fit:cover;object-position:center;" srcset="./images/image31.png">
+      
+        <img src="./images/image31.png" alt="Couple" style="width:100%;height:100vh;object-fit:cover;object-position:center;">
+      </picture>
+</section>
+
+<!-- <section class="w-full h-screen">
+  <picture>
+    <img 
+      src="./images/image16.png" 
+      alt="Couple" 
+      class="w-full h-full object-cover Couple-Image16"
+    >
+  </picture>
+</section> -->
+<!-- 
+<section class="py-8 bg-white">
+  <div class="grid grid-cols-12 gap-6 items-stretch">
+
+    <div class="col-span-3 flex flex-col gap-2">
+      <img src="./images/image19.png" 
+           alt="Groom" 
+           class="w-full flex-1 object-cover shadow-lg">
+      <img src="./images/image20.png" 
+           alt="Bride" 
+           class="w-full flex-1 object-cover  shadow-lg">
+    </div>
+
+    <div class="col-span-6 flex flex-col justify-center items-center text-center px-4">
+      <h2 class="text-2xl font-semibold mb-2">Venue</h2>
+      <p class="text-gray-600 mb-4">At Kamatha Hotel & Restaurant, Ambalantota</p>
+      <a href="https://maps.app.goo.gl/sECPXGKgSzXm9FsT8"
+         target="_blank"
+         class="px-6 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-700 transition">
+        Google Maps
+      </a>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-2">Celebration Starts</h2>
+      <p class="text-gray-600">at the joyous hour of 9:30 in the morning</p>
+    </div>
+
+    <div class="col-span-3 flex flex-col gap-2">
+      <img src="./images/image21.png" 
+           alt="Couple" 
+           class="w-full flex-1 object-cover shadow-lg">
+      <img src="./images/image22.png" 
+           alt="Bride & Groom" 
+           class="w-full flex-1 object-cover  shadow-lg">
+      <img src="./images/image23.png" 
+           alt="Walking" 
+           class="w-full flex-1 object-cover shadow-lg">
+    </div>
+  </div>
+</section> -->
+
+<!-- Venue & Celebration Section -->
+<section class="py-6 bg-white">
+  <div class="grid grid-cols-12 gap-x-2 gap-y-3  items-stretch">
+
+    <!-- Middle Content (will appear first on mobile) -->
+    <div class="order-1 lg:order-2 col-span-12 lg:col-span-6 flex flex-col justify-center items-center text-center px-2 py-10">
+      <h2 class="text-4xl text-gray-600 mb-2 font-2 relative inline-block after:content-[''] after:block after:w-24 after:h-[2px] after:bg-gray-400 after:mx-auto after:mt-2">
+        Venue
+      </h2>
+      <p class="text-gray-600 mb-8 mt-2 font-1">At Kamatha Hotel & Restaurant, Ambalantota</p>
+      <a href="https://maps.app.goo.gl/1hy7DH7Ys2M7jyRU8?g_st=ic"
+         target="_blank"
+         class="px-6 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-700 transition font-1">
+          Google Maps
+      </a>
+
+      <h2 class="text-4xl text-gray-600 mt-16 mb-2 font-2 relative inline-block after:content-[''] after:block after:w-28 after:h-[2px] after:bg-gray-400 after:mx-auto after:mt-2">
+        Celebration Starts
+      </h2>
+      <p class="text-gray-600 font-5 mt-2">at the joyous hour of 8:30 in the morning</p>
+    </div>
+
+    <!-- Left Column -->
+    <div class="order-2 lg:order-1 col-span-6 lg:col-span-3 flex flex-col gap-2">
+      <img src="./images/6 (1).jpg" 
+           alt="Groom" 
+           class="w-full flex-1 object-cover shadow-lg">
+      <img src="./images/image18.png" 
+           alt="Bride" 
+           class="w-full flex-1 object-cover shadow-lg">
+    </div>
+
+    <!-- Right Column -->
+    <div class="order-3 lg:order-3 col-span-6 lg:col-span-3 flex flex-col gap-2">
+      <img src="./images/image42.png" 
+           alt="Couple" 
+           class="w-full flex-1 object-cover shadow-lg">
+      <img src="./images/6 (2).jpg" 
+           alt="Bride & Groom" 
+           class="w-full flex-1 object-cover shadow-lg">
+      <img src="./images/6 (3).jpg" 
+           alt="Couple 2" 
+           class="w-full flex-1 object-cover shadow-lg">
+      
+    </div>
+  </div>
+  
+</section>
+
+
+<!-- RSVP Section -->
+<section class="max-w-xl mx-auto px-0 text-center mt-12 py-10 bg-white ">
+  <p class="text-gray-700 mb-6 font-7">
+    Your presence will be a cherished blessing on our special day.
+  </p>
+
+  <h2 class="text-4xl text-gray-600 font-light mb-8 font-4">RSVP</h2>
+
+  <!-- Name Input -->
+  <div class="mb-8 flex justify-center">
+    <input 
+      type="text" 
+      id="rsvpName"  
+      name="Name"
+      placeholder="Your Name" 
+      class="w-3/4 border-b border-gray-300 focus:outline-none focus:border-gray-500 py-2 text-left font-7"
+    />
+  </div>
+
+  <!-- RSVP Options -->
+  <div class="mb-8 flex justify-center">
+    <div class="w-5/7 text-left font-7 px-1">
+      <p class="mb-3 text-gray-600">Can we celebrate this happy day together?</p>
+      <label class="block mb-3 text-gray-600">
+        <input type="radio" name="attendance" value="Yes" class="mr-2">
+        Yes, wouldn't miss it for the world!
+      </label>
+      <label class="block text-gray-600">
+        <input type="radio" name="attendance" value="No" class="mr-2">
+        Sorry, can't make it, sending love from afar
+      </label>
+    </div>
+  </div>
+
+  <a href="#"
+  target="_blank"
+  id="submitButton"
+  class="px-6 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-700 transition font-7 mb-8">
+  Submit My Response
+</a>
+
+  <!-- Confirmation -->
+  <div class="mb-10 flex justify-center mt-10">
+    <p class="w-3/4 text-gray-700 font-7 text-center">
+      Kindly confirm your presence by <span class="font-semibold">20th of April 2026</span>
+    </p>
+  </div>
+
+   <!-- Contacts -->
+  <div class="flex justify-center">
+    <div class="w-full flex justify-between text-gray-600 px-4">
+      <div>
+        <p class="font-8">Shanika Koswatta</p>
+        <p class="font-8">0703582108</p>
+      </div>
+      <div>
+        <p class="font-8">Pasindu Harshanath</p>
+        <p class="font-8">0715533529</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Photo Section -->
+<section class="w-full mx-auto  mt-12">
+  <div class="overflow-hidden">
+    <img 
+      src="./images/8.jpg" 
+      alt="Wedding Couple" 
+      class="w-full h-auto object-cover"
+    />
+  </div>
+</section>
+
+ 
+
+
+
+
+
+  <script>
+    // Countdown Script
+    const weddingDate = new Date("April 29, 2026 08:30:00").getTime();
+
+    const timer = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      
+      document.getElementById("countdown").innerHTML = `
+  <span class="countdown-item"><b>${days}</b><span>Days</span></span>
+  <span class="countdown-item"><b>${hours}</b><span>Hrs</span></span>
+  <span class="countdown-item"><b>${minutes}</b><span>Min</span></span>
+  <span class="countdown-item"><b>${seconds}</b><span>Sec</span></span>
+`;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML = "We are going to marry today!";
+      }
+    }, 1000);
+
+    const scrollButton = document.getElementById('scrollDown');
+  scrollButton.addEventListener('click', () => {
+    const nextSection = document.querySelector('section:nth-of-type(2)'); // adjust selector to your next section
+    nextSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  
+      
+      document.addEventListener('DOMContentLoaded', () => {
+          const submitButton = document.getElementById('submitButton');
+          const nameInput = document.getElementById('rsvpName');
+          const googleFormURL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYTNOcaVkb5hsEhkNdYxYe01FNbO6igBXwczwiXrCyWOFKQQ/formResponse'; // <-- your formResponse URL
+
+          // Replace these with your real Google Form field IDs
+          const nameField = 'entry.1615704562';       // Name field
+          const attendanceField = 'entry.1744432263'; // Attendance field
+
+          submitButton.addEventListener('click', async (e) => {
+              e.preventDefault();
+
+              const name = nameInput.value;
+              const attendanceRadio = document.querySelector('input[name="attendance"]:checked');
+
+              if (!name || !attendanceRadio) {
+                  alert("Please enter your name and select an attendance option.");
+                  return;
+              }
+
+              const attendance = attendanceRadio.value;
+
+              // Prepare the form data
+              const formData = new FormData();
+              formData.append(nameField, name);
+              formData.append(attendanceField, attendance);
+
+              try {
+                  const response = await fetch(googleFormURL, {
+                      method: 'POST',
+                      mode: 'no-cors', // Google Forms requires this
+                      body: formData
+                  });
+
+                  // Success feedback (Google doesn't return a response when using no-cors)
+                  alert("Thank you! Your RSVP has been submitted successfully.");
+                  nameInput.value = '';
+                  attendanceRadio.checked = false;
+
+
+              } catch (error) {
+                  console.error('Error:', error);
+                  alert("There was a problem submitting your RSVP. Please try again.");
+              }
+          });
+
+      });
+  </script>
+</body>
+</html>

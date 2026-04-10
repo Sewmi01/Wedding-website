@@ -1,0 +1,54 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Get the submit button and the form elements using their IDs/names
+    const submitButton = document.getElementById('submitButton');
+    const nameInput = document.getElementById('rsvpName');
+    const formspreeEndpoint = 'https://formspree.io/f/mvgwwjbw'; // <-- PASTE YOUR ENDPOINT
+
+    // 2. Add an event listener to the button
+    submitButton.addEventListener('click', async (e) => {
+        e.preventDefault(); // Stop the default anchor link action ('#')
+
+        // 3. Collect the data
+        const name = nameInput.value;
+        const attendanceRadio = document.querySelector('input[name="attendance"]:checked');
+        
+        // Basic validation
+        if (!name || !attendanceRadio) {
+            alert("Please enter your name and select an attendance option.");
+            return;
+        }
+
+        const attendance = attendanceRadio.value;
+
+        // 4. Prepare the data for submission (FormData is the easiest way)
+        const formData = new FormData();
+        formData.append('Name', name);
+        formData.append('Attendance', attendance);
+
+        // 5. Send the data using the Fetch API
+        try {
+            const response = await fetch(formspreeEndpoint, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                alert("Thank you! Your RSVP has been submitted successfully.");
+                // Optionally clear the form fields here
+                nameInput.value = '';
+                attendanceRadio.checked = false;
+            } else {
+                // Log and show error message if Formspree returns an error
+                const data = await response.json();
+                console.error('Formspree Error:', data.error);
+                alert("There was an issue submitting your RSVP. Please try again.");
+            }
+        } catch (error) {
+            console.error('Network Error:', error);
+            alert("A network error occurred. Please check your connection.");
+        }
+    });
+  });

@@ -1,0 +1,364 @@
+.curve-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .curve-section::after {
+    content: "";
+    position: absolute;
+    bottom: 50px; /* pushes the curve down a bit */
+    left: 0;
+    width: 100%;
+    height: 100px; /* curve height */
+    background: white; /* next section color */
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  
+  @font-face {
+    font-family: "Safira March Personal Use";
+    src: url("./fonts/SafiraMarchPersonalUseOnly.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-safira {
+    font-family: "Safira March Personal Use", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
+
+  @font-face {
+    font-family: "LatinmodernmathRegular";
+    src: url("./fonts/LatinmodernmathRegular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-LMR {
+    font-family: "LatinmodernmathRegular", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
+
+  @font-face {
+    font-family: "Satisfy";
+    src: url("./fonts/Satisfy.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-Satify {
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
+
+  @font-face {
+    font-family: "countdown-font";
+    src: url("./fonts/CountdownFont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-CountDown {
+    font-family: "countdown-font", serif;
+      /* 4% letter spacing */
+  }
+
+  @font-face {
+    font-family: "font-1";
+    src: url("./fonts/JacquesFrancois-Regular.ttf") format("truetype");
+  }
+  
+  .font-1 {
+    font-family: "font-1", serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+
+  }
+
+  .font-7 {
+    font-family: "font-1", serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+
+  }
+
+  
+  @font-face {
+    font-family: "font-2";
+    src: url("./fonts/SafiraMarchPersonalUseOnly-nAa5J.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  .font-2 {
+    font-family: "font-2", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  }
+
+  
+  @font-face {
+    font-family: "font-3";
+    src: url("./fonts/TangerineRegular-7JAD.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  .font-3 {
+    font-family: "font-3", serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    
+
+  }
+
+
+  .font-4 {
+    font-family: "font-2", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  }
+
+
+  @font-face {
+    font-family: "font-5";
+    src: url("./fonts/InriaSerif-Regular.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  .font-5 {
+    font-family: "font-5", serif;
+    font-family: Inria Serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+    
+
+  }
+
+
+  .font-8 {
+    font-family: "font-5", serif;
+    font-family: Inria Serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+    
+
+  }
+
+  .countdown-font {
+    font-family: "countdown-font", serif !important;
+    font-size: 20px;
+    color: #333;
+  }
+
+  /* .countdown {
+    display: flex;
+    gap: 2rem;               
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 3rem;                
+    justify-content: center;
+    align-items: flex-start;    
+  }
+  
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .countdown-item b {
+    font-size: 1rem;            
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .countdown-item span {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+
+  .countdown-item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -25px;              
+    top: 0;                     
+    transform: translateY(-15%); 
+    font-size: 1rem;            
+    font-weight: bold;
+    color: #fff;
+  } */
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* space between countdown items */
+    flex-wrap: wrap; /* ensures it wraps on very small screens */
+  }
+  
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 60px; /* flexible width that grows/shrinks */
+    min-width: 50px; /* smallest width for very small screens */
+    text-align: center;
+    position: relative;
+  }
+  
+  .countdown-item b {
+    font-size: 1rem; /* adjust for readability */
+    font-weight: bold;
+    line-height: 1.2;
+    word-break: break-word; /* ensures long numbers wrap */
+  }
+  
+  .countdown-item span {
+    font-size: 0.9rem;
+    color: #ccc;
+    white-space: nowrap;
+  }
+  
+  /* Colon separator aligned with the number row */
+  .countdown-item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -10px; /* closer to number, adjusts automatically */
+    top: 50%;
+    transform: translateY(-80%);
+    font-size: 1rem; /* match number size */
+    font-weight: bold;
+    color: #fff;
+  }
+
+
+  .Couple-Image16{
+    object-fit: cover;
+    object-position: center;
+  }
+  
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .countdown-item {
+      flex: 1 1 50px;
+    }
+  
+    .countdown-item b {
+      font-size: 1rem;
+    }
+  
+    .countdown-item span {
+      font-size: 0.75rem;
+    }
+  
+    .countdown-item:not(:last-child)::after {
+      right: -8px;
+      font-size: 1rem;
+    }
+
+    .Couple-Image16 {
+      object-position: 0% center; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .countdown-item b {
+      font-size: 1.5rem;
+    }
+  
+    .countdown-item span {
+      font-size: 1rem;
+    }
+  
+    .countdown-item:not(:last-child)::after {
+      font-size: 1.5rem;
+      right: -15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .font-1 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-2 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-3 {
+      font-size: 35px;
+      font-weight: 400 !important;
+    }
+  
+    .font-4 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-5 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+
+    .font-7 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+
+    .font-8 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  }
+  
+  
