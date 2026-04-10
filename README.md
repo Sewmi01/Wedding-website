@@ -6,18 +6,27 @@ A beautifully designed wedding invitation website to share our special day, even
 A beautifully designed digital wedding invitation website to share our special day with friends and family. This project presents event details in an elegant and interactive way.
 
 ✨ Features
-🌸 Elegant hero section with couple names
-📅 “Save the Date” presentation
-🖼️ Image gallery for memories
-🎨 Custom fonts and romantic design elements
-📱 Fully responsive layout (mobile-friendly)
-⚡ Smooth scrolling and simple animations
 
-🛠️ Built With
+Elegant hero section with couple names
+
+“Save the Date” 
+
+Image gallery for 
+
+Custom fonts and romantic design 
+
+Fully responsive layout (mobile-friendly)
+
+Smooth scrolling and simple animations
+
+Built With
 
 HTML5
+
 CSS3
+
 Tailwind CSS
+
 Custom fonts & assets
 
 📁 Project Structure
